@@ -12,27 +12,29 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav id="navigation" class="navbar navbar-expand bg-light m-2 rounded-2 fixed-bottom ">
-        <div class="navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-heart"></i> Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#"><i class="bi bi-heart"></i> Couple</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#"><i class="bi bi-calendar-heart"></i> Event</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#"><i class="bi bi-images"></i> Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#"><i class="bi bi-chat-square-heart"></i> Wishes</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div class="col-12 col-md-5 col-lg-5 m-auto">
+        <nav id="navigation" class="col-12 col-md-5 col-lg-5 m-auto navbar navbar-expand bg-light m-2 rounded-2 fixed-bottom shadow-lg">
+            <div class="navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home"><i class="bi bi-house-heart"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#couple"><i class="bi bi-heart"></i> Couple</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#event"><i class="bi bi-calendar-heart"></i> Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#gallery"><i class="bi bi-images"></i> Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#wishes"><i class="bi bi-chat-square-heart"></i> Wishes</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
     <section id="start">
         <img src="img/bg1.jpeg" class="img-object-fit-cover" width="100%" alt="...">
         <div id="content-start" class="d-flex justify-content-center align-items-center">        
@@ -45,9 +47,174 @@
             </div>
         </div>
     </section>
+    <section id="home">
+        <div class="container py-5 text-center">
+            <div class="rounded-circle overflow-hidden border border-3 mx-auto mb-5" style="width:300px; height:300px;">
+                <img src="img/pasangan.jpg" class="img-object-fit-cover" alt="sepasang kekasih">
+            </div>
+            <h1 class="font-script">Undangan Pernikahan</h1><br>
+            <h2 class="font-script">Putra & Putri</h2>
+            <p>Kami mengundang Anda untuk merayakan pernikahan kami</p>
+            <button class="btn btn-dark"><i class="bi bi-calendar2-check"></i> Simpan Tanggalnya</button>
+
+        </div>
+    </section>
+    <section id="couple">
+        <div class="container py-5 text-center">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <div class="foto-mempelai m-auto rounded-circle mb-3">
+                                <img src="img/pasangan.jpg" class="img-object-fit-cover">
+                            </div>
+                            <b class="fs-1 font-script">Putra</b>
+                            <p class="text-center">Putra Dari <br> Bapak Terkasih & Ibu Tercinta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <b class="fs-1 font-script">&</b>
+                </div>
+                <div class="col-md-5">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <div class="foto-mempelai m-auto rounded-circle mb-3">
+                                <img src="img/pasangan.jpg" class="img-object-fit-cover">
+                            </div>
+                            <b class="fs-1 font-script">Putri</b>
+                            <p class="text-center">Putri Dari <br> Bapak Terkasih & Ibu Tercinta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+    <section id="event">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="font-script text-center">Jangan Lewatkan Momen Spesial Kami</h1>
+                    <div id="timmer" class="col-5 m-auto text-center my-5">
+                        <span class="d-inline-block text-center p-4 m-1 rounded-2 shadow bg-dark text-white"><b id="hari">0</b><br>hari</span>
+                        <span class="d-inline-block text-center p-4 m-1 rounded-2 shadow bg-dark text-white"><b id="jam">0</b><br>jam</span>
+                        <span class="d-inline-block text-center p-4 m-1 rounded-2 shadow bg-dark text-white"><b id="menit">0</b><br>menit</span>
+                        <span class="d-inline-block text-center p-4 m-1 rounded-2 shadow bg-dark text-white"><b id="detik">0</b><br>detik</span>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center py-5">
+                    <h2 class="font-script mb-2">Akad Nikah</h2>
+                    <p>
+                        MINGGU, 24 NOVEMBER 2024 <br>
+                        11:00 WIB - SELESAI <br>
+                        Jl. Pelaminan, Ds. Nan Indah, Kota Nan Asri, Indonesia
+                    </p>                        
+                </div>
+                <div class="col-md-6 text-center py-5">
+                    <h2 class="font-script mb-2">Resepsi</h2>
+                    <p>
+                        MINGGU, 24 NOVEMBER 2024 <br>
+                        11:00 WIB - SELESAI <br>
+                        Jl. Pelaminan, Ds. Nan Indah, Kota Nan Asri, Indonesia
+                    </p> 
+                </div>
+                <div class="col-12 text-center">
+                    <h1 class="font-script mt-5 mb-3 text-center">Denah Lokasi</h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7921.954042735625!2d109.43743382024228!3d-6.893351783669041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7025c52e6fd299%3A0xb6046974e0cb62f9!2sR-gina%20Hotel!5e0!3m2!1sid!2sid!4v1660408362060!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <br>
+                    <button class="btn btn-dark"><i class="bi bi-sign-turn-slight-right-fill"></i> Lihat Rute</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Mengatur waktu akhir perhitungan mundur
+        var countDownDate = new Date("Dec 5, 2022 15:37:25").getTime();
+
+        // Memperbarui hitungan mundur setiap 1 detik
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;                
+            var H = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var J = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var M = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var D = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Keluarkan hasil dalam elemen dengan id = "demo"
+            document.getElementById("hari").innerHTML = H;
+            document.getElementById("jam").innerHTML = J;
+            document.getElementById("menit").innerHTML = M; 
+            document.getElementById("detik").innerHTML = D;
+
+            // Jika hitungan mundur selesai, tulis beberapa teks 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timmer").innerHTML = "EXPIRED";
+                }
+        }, 1000);
+    </script>
+    <section id="gallery">
+        <div class="container py-5">
+            <h1 class="font-script mb-3 text-center">Galleri Foto</h1>
+            <div class="row">
+                <div class="col-sm-2 col-md-4 col-lg-3 p-0">
+                    <img src="img/pasangan.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-sm-2 col-md-4 col-lg-3 p-0">
+                    <img src="img/pasangan.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-sm-2 col-md-4 col-lg-3 p-0">
+                    <img src="img/pasangan.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-sm-2 col-md-4 col-lg-3 p-0">
+                    <img src="img/pasangan.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-sm-2 col-md-4 col-lg-3 p-0">
+                    <img src="img/pasangan.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-sm-2 col-md-4 col-lg-3 p-0">
+                    <img src="img/pasangan.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-sm-2 col-md-4 col-lg-3 p-0">
+                    <img src="img/pasangan.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-sm-2 col-md-4 col-lg-3 p-0">
+                    <img src="img/pasangan.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="wishes">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <h1 class="font-script">Kirim Ucapan</h1>
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Ucapan</label>
+                            <textarea name="ucapan" id="" class="form-control" cols="30" rows="10"></textarea>
+                        </div>
+                        <button class="btn btn-dark"> <i class="bi bi-send"></i> Kirim</button>
+                    </form>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <h1 class="font-script">Kirim Hadiah</h1>
+                    <ul>
+                        <li>BRI an.Putra 0883645</li>
+                        <li>BCA an.Putra 3483645</li>
+                        <li>Mandiri an.Putra 4583645</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-        buka(true)    
+        buka(false)    
         function buka(data) {
             if (data){
                 $('#navigation').hide()
